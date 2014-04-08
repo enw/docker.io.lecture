@@ -1,0 +1,21 @@
+Container is a snapshot
+Image is a snapshot
+
+COMMANDS
+ps: list containers (made w/docker run, use start/stop/ps)
+images: list images (made w/docker commit -m "message" -t elliotw/tag)
+run: create container from image (run -p 6371 -i -t ewinard/tag /usr/bin/mongo)
+start/stop: stop a container
+build: create an image from a Dockerfile
+inspect: inspect an image
+logs: review stdout/stderr from container
+push/pull: push to docker (or your index)
+
+# get tree/thin container
+$ ps xwf
+
+# attach to the running linux container
+lxc-attach -n ...
+
+# build the docker
+$ docker build -t elliotw/docker.io.lecture .
